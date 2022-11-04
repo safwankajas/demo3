@@ -1,0 +1,88 @@
+body
+{
+    background-color: #1f1f1f;
+    min-height: 100vh;
+    /* overflow: hidden; */
+
+}
+section
+{
+    
+    height: 100vh;
+}
+.parallax
+{
+
+     background-color: #34a3c7;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    animation-name: example ;
+  animation-duration: 100s ;
+  animation-iteration-count: infinite;
+    
+  
+    
+   
+}
+@keyframes example {
+    0%   {background-color: #34a3c7;}
+    18% {background-color: #1f1f1f;}
+    36%  {background-color: #f9dc5c;}
+    54% {background-color: #1f1f1f;}
+    72% {background-color: #B3EFB2;}
+    80% {background-color: #1f1f1f;}
+    100%   {background-color: #34a3c7;}
+    /* 100% {background-color: #34a3c7;} */
+  }
+.parallax img 
+{
+    position: absolute;
+   left: 25%;
+    top: 0;
+    width: 700px;
+    z-index: 5;
+   
+    
+    
+    
+}
+#mod
+{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+   z-index: 5;
+}
+
+
+.parallax  #cirlce
+{
+    animation: mymove 280s infinite;
+  
+}
+@keyframes mymove {
+    0% {transform: rotate(360deg);}
+  }
+  @media screen and (max-width: 840px){
+    p {
+       color: red;
+  }
+  }
+
+  @media screen and (max-width: 600px){
+    .parallax
+    {
+        height: 70vh;
+    }
+    .parallax img 
+    {
+        top: 100px;
+        left: 0;
+        width: 100%;
+        
+    }
+  }

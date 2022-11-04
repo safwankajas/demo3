@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&family=Monoton&family=Press+Start+2P&family=Russo+One&display=swap');
+
+
+
+body {
+    height: 100vh;
+    background-color: #1f1f1f;
+    overflow: hidden;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+}
+
+model-viewer {
+    height: 700px;
+    width: inherit;
+    z-index: 2;
+   
+
+}
+
+#hide {
+    display: none;
+}
+
+
+
+
+.box1 {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72vh;
+    width: 900px;
+    border-radius: 100px;
+    z-index: 1;
+    background: rgba(211, 211, 211, 0.4);
+    
+}
+
+
+
+
+
+.name {
+    
+    color:#fff ;
+    font-size: 15px;
+    font-weight: 900;
+    position: absolute;
+    top: 65%;
+    z-index: 3;
+    cursor: pointer;
+    left: 25%;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 1px;
+}
+
+.name2 {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 900;
+    position: absolute;
+    top: 78%;
+    left: 15%;
+    font-family: 'Libre Barcode 39', cursive;
+}
+
+.waviy {
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 5px;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.waviy span {
+    
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 70px;
+    padding-right: 12px;
+    padding-left: 12px;
+    line-height: 1;
+    animation: flip 10s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+
+}
+
+img {
+    position: absolute;
+    left: 25%;
+    top: 0;
+    width: 650px;
+
+}
+
+#cirlce {
+    animation: mymove 280s infinite;
+
+}
+
+@keyframes mymove {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+.br
+{
+    top: -90px;
+    left: 450px;
+    position: absolute;
+    height: 900px;
+    width: auto;
+    z-index: 0;rotate: 90deg;
+}
+.cld
+{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    width: 300px;
+    z-index: 0;
+}
+.hse
+{
+    position: absolute;
+    width: 500px;
+    top: 35%;
+   left: 68%;
+}

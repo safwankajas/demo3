@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script
+    type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+  ></script>
+  <script src="AC_QuickTime.js" language="JavaScript" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>safwankajas</title>
+</head>
+<body>
+    <section class="parallax">
+        
+        <img   id="cirlce" src="./source/photo/./1.2cir2.png" alt="" >
+        <img class="translateX" data-speed="1.5" src="./source/photo/1.2tex2rght.png" alt="" id="rgt">
+        <img class="translateX" data-speed="-1.5" src="./source/photo/1.2tex2lft.png" alt="" id="lft">
+        <img   src="./source/photo/1.2PIC2.png" alt=""id="person">
+        
+    </section>
+    <script>
+        const translateX=document.querySelectorAll(".translateX");
+        const translateY=document.querySelectorAll(".translateY");
+        window.addEventListener("scroll",()=>
+        {
+            let scroll=window.pageYOffset;
+            translateX.forEach(el =>{
+                let speed =el.dataset.speed;
+                el.style.transform=`translateX(${scroll*speed}px`;
+            })
+        })
+    </script>
+    <section>
+        
+        <model-viewer id="mod"  autoplay  shadow-intensity="1" interaction-prompt="none" src="./source/photo/idle.glb"alt="dragon" camera-controls disable-pan disable-tap disable-zoom min-camera-orbit='-90deg 75deg 0deg' max-camera-orbit= '90deg 75deg 0deg' ></model-viewer>
+    
+    </section>
+        
+    
+</body>
+</html>
